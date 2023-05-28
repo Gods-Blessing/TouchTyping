@@ -3,7 +3,7 @@ import React, {useEffect, useMemo, useState} from 'react';
 import keyboard from "./images/keyboard.png"
 
 // to add more keys for practice add them here in this array
-let arr = ['a','s','d','f', 'j','k','l', ' '];
+let arr = ['a','s','d','f', 'j','k','l', '.'];
 
 function App() {
   // for clock
@@ -79,7 +79,7 @@ function App() {
 
   // to generate the the new string as soon as the last string is completed for typing
   useEffect(()=>{
-    if(leng === 0 || leng === 10){
+    if(leng === 0 || leng === 30){
       // console.log("useffect ran");
       games();
       setText('');
